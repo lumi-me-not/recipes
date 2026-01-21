@@ -1,0 +1,41 @@
+#
+# SPDX-FileCopyrightText: © 2026- AerynOS Developers
+#
+# SPDX-License-Identifier: MPL-2.0
+#
+name        : fuzzel
+version     : 1.13.1
+release     : 1
+homepage    : https://codeberg.org/dnkl/fuzzel
+upstreams   :
+    - https://codeberg.org/dnkl/fuzzel/archive/1.13.1.tar.gz : 17e8f01753469573965a2a37b5745d03e6f6e7bda9d675cd2bc4644abb42d818
+summary     : "A Wayland-native application launcher and fuzzy finder, inspired by rofi and dmenu."
+description : |
+    A Wayland-native application launcher and fuzzy finder, inspired by rofi and dmenu.
+license     : 
+    - MIT
+    - Zlib
+builddeps   :
+    - binary(env)
+    - binary(fish)
+    - binary(python3)
+    - binary(wtype)
+    - pkgconfig(cairo)
+    - pkgconfig(fcft)
+    - pkgconfig(fontconfig)
+    - pkgconfig(libpng)
+    - pkgconfig(librsvg-2.0)
+    - pkgconfig(pixman-1)
+    - pkgconfig(tllist)
+    - pkgconfig(wayland-client)
+    - pkgconfig(wayland-cursor)
+    - pkgconfig(wayland-protocols)
+    - pkgconfig(wayland-scanner)
+    - pkgconfig(xkbcommon)
+    - pkgconfig(scdoc)
+setup       : |
+    %meson
+build       : |
+    %meson_build
+install     : |
+    %meson_install
