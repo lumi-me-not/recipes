@@ -1,0 +1,5 @@
+releases:
+  id: 373570 # actually "swww", "awww" got renamed to "swww"
+  rss: https://codeberg.org/LGFae/awww/releases.rss
+security:
+  cpe: ~ # No CPE found, last checked (2026-01-22)
