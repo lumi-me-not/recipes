@@ -1,0 +1,29 @@
+# SPDX-FileCopyrightText: 2026 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : udiskie
+version     : "2.7.0"
+release     : 1
+homepage    : https://github.com/coldfix/udiskie
+upstreams   :
+    - https://github.com/coldfix/udiskie/archive/refs/tags/v2.7.0.tar.gz : eb8c173e84050db01556aad68e75cfb45fee57d880b368a395459ee5e815ce8b
+summary     : udiskie is a udisks2 front-end
+description : |
+    udiskie is a udisks2 front-end that allows you to manage removable media such as CDs or flash drives from userspace.
+builddeps   :
+    - binary(a2x)
+    - binary(asciidoc)
+    - binary(msgfmt)
+    - binary(xsltproc)
+    - python(pygobject)
+    - docbook
+    - docbook-xsl
+license     :
+    - MIT
+environment : |
+    %export_docbook_catalogs
+build       : |
+    %python_setup
+    %make -C doc
+install     : |
+    %python_install

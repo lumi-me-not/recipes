@@ -1,0 +1,5 @@
+releases:
+  id: 7187
+  rss: https://github.com/coldfix/udiskie/releases.atom
+security:
+  cpe: ~ # No CPE found, last checked (2026-08-05)
