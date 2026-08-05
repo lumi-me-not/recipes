@@ -1,0 +1,23 @@
+/** Human readable report. This is not consumed by boulder */
+{
+	"manifest-version": "0.2",
+	"packages": {
+		"python-docopt": {
+			"files": [
+				"/usr/lib/python3.14/site-packages/__pycache__/docopt.cpython-314.pyc",
+				"/usr/lib/python3.14/site-packages/docopt-0.6.2-py3.14.egg-info/PKG-INFO",
+				"/usr/lib/python3.14/site-packages/docopt-0.6.2-py3.14.egg-info/SOURCES.txt",
+				"/usr/lib/python3.14/site-packages/docopt-0.6.2-py3.14.egg-info/dependency_links.txt",
+				"/usr/lib/python3.14/site-packages/docopt-0.6.2-py3.14.egg-info/top_level.txt",
+				"/usr/lib/python3.14/site-packages/docopt.py"
+			],
+			"name": "python-docopt",
+			"provides": [
+				"python(docopt)"
+			]
+		}
+	},
+	"source-name": "python-docopt",
+	"source-release": "1",
+	"source-version": "0.6.2"
+}

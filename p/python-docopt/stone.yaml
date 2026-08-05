@@ -1,0 +1,18 @@
+# SPDX-FileCopyrightText: 2026 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : python-docopt
+version     : "0.6.2"
+release     : 1
+homepage    : https://github.com/docopt/docopt
+upstreams   :
+    - https://github.com/docopt/docopt/archive/refs/tags/0.6.2.tar.gz : 2113eed1e7fbbcd43fb7ee6a977fb02d0b482753586c9dc1a8e3b7d541426e99
+summary     : docopt creates beautiful command-line interfaces
+description : |
+    docopt creates beautiful command-line interfaces
+license     :
+    - MIT
+build       : |
+    %python_setup
+install     : |
+    %python_install
